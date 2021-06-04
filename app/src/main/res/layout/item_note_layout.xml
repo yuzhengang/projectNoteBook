@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@drawable/shape_round_corner"
+    xmlns:card_view="http://schemas.android.com/tools"
+   >
+  <LinearLayout
+      android:layout_centerVertical="true"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/noteTitleTv"
+          android:textSize="15sp"
+          android:textColor="@color/black"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:id="@+id/noteDateTv"
+          android:textSize="12sp"
+          android:layout_marginTop="5dp"
+          android:textColor="@color/gray3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+  </LinearLayout>
+</RelativeLayout>

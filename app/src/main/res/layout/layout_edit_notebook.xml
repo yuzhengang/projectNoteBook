@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/noteBackIv"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back"
+            android:layout_width="40dp"
+            android:layout_height="30dp" />
+        <LinearLayout
+            android:id="@+id/editMenuLat"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/noteSearchIv"
+                android:src="@mipmap/searchbtn"
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="20dp"/>
+
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/noteUndoIv"
+                android:src="@mipmap/rescind"
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="20dp"/>
+            <ImageView
+                android:id="@+id/noteRedoIv"
+                android:src="@mipmap/reverse_rescind"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="20dp"/>
+            <ImageView
+                android:id="@+id/noteConfirmIv"
+                android:src="@mipmap/confirm"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/noteTitleEt"
+        android:layout_marginTop="4dp"
+        android:textSize="25sp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:background="@null"
+        android:hint="标题"
+        android:textColorHint="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <TextView
+          android:id="@+id/noteTimeTv"
+          android:layout_marginLeft="15dp"
+          android:text="今天  12:30"
+          android:layout_marginTop="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:id="@+id/noteTotalNumTv"
+          android:layout_marginRight="15dp"
+          android:layout_alignParentRight="true"
+          android:layout_marginLeft="15dp"
+          android:text="共0字"
+          android:layout_marginTop="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+  </RelativeLayout>
+      <com.km.notebook.SearchEditText
+          android:id="@+id/noteContentEt"
+          android:gravity="start|top"
+          android:background="@null"
+          android:textCursorDrawable="@drawable/color_cursor"
+          android:textColorHint="#000000"
+          android:padding="15dp"
+          android:hint="输入内容"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+</LinearLayout>
